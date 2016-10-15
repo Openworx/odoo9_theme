@@ -21,11 +21,3 @@
     ],
 }
 
-/*!------------------------------------*\
-    Left
-\*!------------------------------------*/
-.drawer--left .drawer-nav {
-  left: -16.25rem;
-  -webkit-transition: left .1s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-  transition: left .1s cubic-bezier(0.190, 1.000, 0.220, 1.000);
-}
