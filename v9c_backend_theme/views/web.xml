@@ -107,8 +107,15 @@
         <xpath expr="//div[@class='oe_secondary_menus_container']/t" position="replace">
 
             <t t-foreach="menu_data['children']" t-as="menu">
-                <ul style="display: none" class="oe_secondary_menu nav navbar-nav" t-att-data-menu-parent="menu['id']">
+			    <ul style="display: none" class="oe_secondary_menu nav navbar-nav" t-att-data-menu-parent="menu['id']">
+				<li class="app-name">
+					<span class="oe_menu_text">
+						<t t-esc="menu['name']"/> 
+					</span>
+				</li>
+				<li>
                     <t t-call="web.menu_secondary_submenu" />
+				</li>
                 </ul>
             </t>
 
