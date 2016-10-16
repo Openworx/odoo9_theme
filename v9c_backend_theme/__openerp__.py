@@ -9,6 +9,10 @@
     "version": "9.0.1.0.0",
     "category": "Website",
     "website": "http://www.openworx.nl",
+	"description": """
+Backend theme for Odoo 9.0 community edition.
+The app dashboard is based on the module web_responsive from LasLabs Inc.
+    """,
     "author": "Openworx",
     "license": "LGPL-3",
     "installable": True,
