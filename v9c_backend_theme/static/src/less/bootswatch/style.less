@@ -63,6 +63,19 @@
     max-width: 90%;
 }
 
+// Input field
+
+.openerp input, .openerp textarea, .openerp select {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.o_web_client input:focus, .o_web_client textarea:focus, .o_web_client select:focus {
+    outline: none;
+	border-bottom: 2px solid @brand-info;
+}
+
 // Explorer 11 fix to use fullscreen
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
