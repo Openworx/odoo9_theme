@@ -4,7 +4,7 @@
 odoo.define('web_responsive', function(require) {
     'use strict';
 
-    var $ = require('$');
+/*    var $ = require('$'); */
     var Menu = require('web.Menu');
     var Class = require('web.Class');
     var SearchView = require('web.SearchView');
@@ -33,7 +33,7 @@ odoo.define('web_responsive', function(require) {
 
         // Prevent focus of search field on mobile devices
         toggle_visibility: function (is_visible) {
-            $('div.oe_searchview_input').last()
+            $('div.o_searchview_input').last()
                 .one('focus', $.proxy(this.preventMobileFocus, this));
             return this._super(is_visible);
         },
@@ -83,7 +83,7 @@ odoo.define('web_responsive', function(require) {
                 '-': this.LEFT,
             };
             this.initDrawer();
-            var $clickZones = $('.openerp_webclient_container, ' +
+            var $clickZones = $('.o_main, ' +
                                 'a.oe_menu_leaf, ' +
                                 'a.oe_menu_toggler'
                                 );
@@ -113,7 +113,7 @@ odoo.define('web_responsive', function(require) {
         // It provides handlers to hide drawer when "unfocused"
         handleClickZones: function() {
             this.$el.drawer('close');
-            $('.oe_secondary_menus_container')
+            $('.o_sub_menu_content')
                 .parent()
                 .collapse('hide');
         },

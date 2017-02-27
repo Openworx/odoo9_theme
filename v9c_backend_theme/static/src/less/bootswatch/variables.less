@@ -14,13 +14,23 @@
 @gray-light:             #AEA79F;   // #999
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-//@brand-primary:		#772953;
 @brand-primary:			#337AB7;
 @brand-success:         #38B44A;
 @brand-info:            #337AB7; // same color als primary
 @brand-warning:         #EFB73E;
 @brand-danger:          #DF382C;
 
+@odoo-brand-primary: @brand-primary;
+@odoo-brand-optional: @brand-primary;
+@odoo-brand-secondary: #f0eeee;
+@odoo-brand-lightsecondary: #e2e2e0;
+
+@odoo-color-pink: @brand-primary;
+@odoo-main-color-muted: #a8a8a8;
+@odoo-main-text-color: #4c4c4c;
+
+@odoo-view-background-color: white;
+@odoo-shadow-color: #303030;
 
 //== Scaffolding
 //
@@ -49,7 +59,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          13px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 

@@ -41,12 +41,5 @@
                     />
         </xpath>
     </template>
-    <template id="qunit_suite" inherit_id="web.qunit_suite">
-        <xpath expr="//html/head" position="inside">
-            <script type="application/javascript"
-                    src="/v9c_backend_theme/static/tests/js/web_responsive.js"
-                    />
-        </xpath>
-    </template>
 	</data>
 </odoo>

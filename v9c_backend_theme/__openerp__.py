@@ -3,15 +3,14 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 {
-    "name": "V9c Backend Theme",
-    "summary": "Odoo 9.0 community backend theme"
-               "web",
-    "version": "9.0.1.0.0",
+    "name": "Material/United Backend Theme",
+    "summary": "Odoo 9.0 community backend theme",
+    "version": "9.0.2",
     "category": "Website",
     "website": "http://www.openworx.nl",
 	"description": """
-Backend theme for Odoo 9.0 community edition.
-The app dashboard is based on the module web_responsive from LasLabs Inc.
+                Backend theme for Odoo 9.0 community edition.
+                The app dashboard is based on the module web_responsive from LasLabs Inc and the theme on Bootstrap United
     """,
     "author": "Openworx",
     "license": "LGPL-3",
