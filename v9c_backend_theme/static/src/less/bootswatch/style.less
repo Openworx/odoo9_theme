@@ -186,6 +186,14 @@ body a {
 background-color:#8f8f8f !important;
 } 
 
+.openerp .oe_graph {
+    background-color: #fff;
+}
+
+.o-pivot-table table {
+    background-color: #fff;
+}
+
 .o_kanban_view {
 	background-color: #8f8f8f;
 }
@@ -198,9 +206,15 @@ background-color:#8f8f8f !important;
     background-color: @brand-primary !important;
 }
 
+// Fix color in block below chatterbox
+.oe-view-manager-view-form {
+    background-color: #fff;
+}
+
 // Fix gray block in preferences & bottom gray
-.oe-view-manager-content{
-	background-color: #8f8f8f;
+
+.oe-view-manager.oe_view_manager_current {
+    background-color: #8f8f8f !important;
 }
 
 
@@ -398,7 +412,13 @@ textarea, select, .openerp .oe_formview.oe_form_editable .o_form_field_many2many
 
 // Explorer 11 fix to use fullscreen
 
+/*
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	// IE 11: Fix tasks height in kanban view-manager
+	.o_kanban_view {
+		height:100%;
+	}
 
 	.oe-view-manager-view-kanban, .oe-view-manager-view-form, .oe-view-manager-view-list, .oe-view-manager-view-calendar, .oe-view-manager-view-pivot, .oe-view-manager-view-graph {
         width: 100% !important;
@@ -412,10 +432,14 @@ textarea, select, .openerp .oe_formview.oe_form_editable .o_form_field_many2many
 	
 	// Fix salesboard width
 	.oe-view-manager-view-sales_team_dashboard {
-		width: 100%;
-	}
+		width: 100%; 
+	} 
 
-}
+} 
+*/
+
+
+
 
 // Avatar
 
